@@ -10,9 +10,9 @@ const Stack = createStackNavigator()
 const StackScreen = () => {
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="F. R. I. E. N. D. S." >
+            <Stack.Navigator initialRouteName="Contacts" >
                 <Stack.Screen 
-                    name="F. R. I. E. N. D. S."
+                    name="Contacts"
                     component={ContactListScreen}
                     options={({ navigation }) => ({
                         headerRight: () => (
@@ -23,7 +23,7 @@ const StackScreen = () => {
                     name="Favourite"
                     component={FavContactListScreen}
                     options={{
-                        title: 'Favourite FRIENDS Stars'
+                        title: 'Favourite Contacts'
                     }} />
             </Stack.Navigator>
         </NavigationContainer>
